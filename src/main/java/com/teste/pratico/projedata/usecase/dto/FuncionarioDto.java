@@ -1,4 +1,4 @@
-package com.teste.pratico.projedata.domain.dto;
+package com.teste.pratico.projedata.usecase.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;

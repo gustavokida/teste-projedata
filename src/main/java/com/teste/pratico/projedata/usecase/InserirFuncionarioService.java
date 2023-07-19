@@ -2,8 +2,8 @@ package com.teste.pratico.projedata.usecase;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.teste.pratico.projedata.domain.Funcionario;
-import com.teste.pratico.projedata.domain.dto.FuncionariosDto;
-import com.teste.pratico.projedata.domain.dto.mapper.FuncionariosDtoMapper;
+import com.teste.pratico.projedata.usecase.dto.FuncionariosDto;
+import com.teste.pratico.projedata.usecase.dto.mapper.FuncionariosDtoMapper;
 import com.teste.pratico.projedata.domain.json.FuncionarioJson;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
