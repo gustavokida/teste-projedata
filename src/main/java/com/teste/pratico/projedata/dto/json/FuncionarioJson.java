@@ -1,4 +1,4 @@
-package com.teste.pratico.projedata.domain.json;
+package com.teste.pratico.projedata.dto.json;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

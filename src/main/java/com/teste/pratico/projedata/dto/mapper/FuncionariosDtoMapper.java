@@ -1,7 +1,7 @@
-package com.teste.pratico.projedata.usecase.dto.mapper;
+package com.teste.pratico.projedata.dto.mapper;
 
 import com.teste.pratico.projedata.domain.Funcionario;
-import com.teste.pratico.projedata.usecase.dto.FuncionariosDto;
+import com.teste.pratico.projedata.dto.FuncionariosDto;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
