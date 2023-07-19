@@ -19,7 +19,7 @@ public class InserirFuncionarioService {
         try{
             ObjectMapper mapper = new ObjectMapper();
             FuncionarioJson funcionarioJson = new FuncionarioJson();
-            var funcionariosDto = mapper.readValue(funcionarioJson.getFuncionarioJson(), FuncionariosDto.class);
+            var funcionariosDto = mapper.readValue(funcionarioJson.getJson(), FuncionariosDto.class);
             return funcionariosDtoMapper.map(funcionariosDto);
         } catch (Exception e){
             System.err.println(e.getMessage());

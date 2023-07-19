@@ -1,6 +1,5 @@
 package com.teste.pratico.projedata.service;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.teste.pratico.projedata.domain.Funcionario;
 import com.teste.pratico.projedata.usecase.AumentarSalarioFuncionarioService;
 import com.teste.pratico.projedata.usecase.ImprimirFuncionarioService;

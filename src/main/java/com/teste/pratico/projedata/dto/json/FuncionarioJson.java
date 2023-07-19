@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class FuncionarioJson {
-    private String funcionarioJson = """
+    private String json = """
             {
                 "funcionario": [
                     {

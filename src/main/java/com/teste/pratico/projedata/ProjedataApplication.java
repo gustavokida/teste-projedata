@@ -15,10 +15,8 @@ public class ProjedataApplication {
 
 	@Bean
 	CommandLineRunner commandLineRunner(Principal principal) {
-		return args -> {
-//			Principal principal = new Principal();
+		return args ->
 			principal.execute();
-		};
 	}
 
 }
