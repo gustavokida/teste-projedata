@@ -24,16 +24,16 @@ public class Principal {
     private static final Integer SEGUNDO_ANIVERSARIO = 12;
 
     public void execute() {
-        var listaFuncionarios = new ArrayList<Funcionario>(inserirFuncionarioService.inserirTodos());
-        removerPessoaService.remover(listaFuncionarios, NOME_FUNCIONARIO_REMOVIDO);
-        imprimirFuncionarioService.imprimir(listaFuncionarios);
-        aumentarSalarioFuncionarioService.aumentarTodos(listaFuncionarios);
-        imprimirFuncionarioService.imprimirPorFuncao(listaFuncionarios);
-        imprimirFuncionarioService.imprimirPorAniversario(listaFuncionarios, PRIMEIRO_ANIVERSARIO);
-        imprimirFuncionarioService.imprimirPorAniversario(listaFuncionarios, SEGUNDO_ANIVERSARIO);
-        imprimirFuncionarioService.imprimirMaiorIdade(listaFuncionarios);
-        imprimirFuncionarioService.imprimirPorOrdemAlfabetica(listaFuncionarios);
-        imprimirFuncionarioService.imprimirSalarioTotal(listaFuncionarios);
-        imprimirFuncionarioService.imprimirSalariosMinimosDeCadaFuncionario(listaFuncionarios);
+        var listaFuncionarios = new ArrayList<Funcionario>(inserirFuncionarioService.inserirTodos()); //3.1
+        removerPessoaService.remover(listaFuncionarios, NOME_FUNCIONARIO_REMOVIDO); //3.2
+        imprimirFuncionarioService.imprimir(listaFuncionarios); //3.3
+        aumentarSalarioFuncionarioService.aumentarTodos(listaFuncionarios); //3.4
+        imprimirFuncionarioService.imprimirPorFuncao(listaFuncionarios); //3.5, 3.6
+        imprimirFuncionarioService.imprimirPorAniversario(listaFuncionarios, PRIMEIRO_ANIVERSARIO); //3.8 não há 3.7 no teste
+        imprimirFuncionarioService.imprimirPorAniversario(listaFuncionarios, SEGUNDO_ANIVERSARIO); //3.8
+        imprimirFuncionarioService.imprimirMaiorIdade(listaFuncionarios); //3.9
+        imprimirFuncionarioService.imprimirPorOrdemAlfabetica(listaFuncionarios); //3.10
+        imprimirFuncionarioService.imprimirSalarioTotal(listaFuncionarios); //3.11
+        imprimirFuncionarioService.imprimirSalariosMinimosDeCadaFuncionario(listaFuncionarios); //3.12
     }
 }
