@@ -59,12 +59,12 @@ public class ImprimirFuncionarioService {
     }
     public void imprimirSalarioTotal(List<Funcionario> listaFuncionario){
         var soma = listaFuncionario.stream().mapToDouble(funcionario -> funcionario.getSalario().doubleValue()).sum();
-        System.out.println("Total dos salários: " + soma);
+        System.out.println("Total dos salários: " + formatter.format(soma));
         System.out.println();
 
     }
     public void imprimirSalariosMinimosDeCadaFuncionario(List<Funcionario> listaFuncionario){
-        System.out.println("Salários por salários mínimos: ");
+        System.out.println("Quantidade de salários mínimos: ");
         listaFuncionario.forEach(funcionario -> {
             System.out.println(funcionario.getNome() + " | " +
                     funcionario.getFuncao() + " | " +
