@@ -5,10 +5,10 @@ import com.teste.pratico.projedata.domain.Funcionario;
 import com.teste.pratico.projedata.dto.FuncionariosDto;
 import com.teste.pratico.projedata.dto.mapper.FuncionariosDtoMapper;
 import com.teste.pratico.projedata.dto.json.FuncionarioJson;
+import com.teste.pratico.projedata.shared.exception.MapFuncionarioJsonException;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -22,8 +22,7 @@ public class InserirFuncionarioService {
             var funcionariosDto = mapper.readValue(funcionarioJson.getJson(), FuncionariosDto.class);
             return funcionariosDtoMapper.map(funcionariosDto);
         } catch (Exception e){
-            System.err.println(e.getMessage());
+            throw new MapFuncionarioJsonException("Erro ao mapear a lista json de funcionários.");
         }
-        return new ArrayList<>();
     }
 }
